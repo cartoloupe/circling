@@ -12,8 +12,8 @@ kadira:flow-router
 kadira:blaze-layout
 arillo:flow-router-helpers
 
-materialize:materialize
 zimme:active-route
+materialize:materialize
 modweb:materialize-connection-status
 useraccounts:materialize
 useraccounts:flow-routing

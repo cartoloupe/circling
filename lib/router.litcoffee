@@ -29,7 +29,7 @@ Creates a basic flow route, a common pattern.
 
     requireLoggedIn = (context, redirect) ->
       if not (Meteor.user()? or Meteor.loggingIn())
-        redirect 'kaya'
+        redirect 'signIn'
 
     FlowRouter.triggers.enter [requireLoggedIn], except: _.union ['kaya'], userAccountsRoutes
 

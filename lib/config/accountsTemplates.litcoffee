@@ -42,7 +42,7 @@ Client-side Validation
         signUpLink_link: 'Create an account'
         pwdLink_link: 'Forgot password?'
 
-      onLogoutHook: -> FlowRouter.go '/kaya'
+      onLogoutHook: -> FlowRouter.go '/sign-in'
 
     AccountsTemplates.removeField 'email'
     password = AccountsTemplates.removeField 'password'
@@ -96,4 +96,3 @@ Client-side Validation
     AccountsTemplates.configureRoute 'signIn'
     #AccountsTemplates.configureRoute 'signUp'
     #AccountsTemplates.configureRoute 'verifyEmail'
-
