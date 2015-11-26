@@ -49,3 +49,18 @@ $boardheight: $gridheight + $cellheight;
   height: $boardheight;
   cursor: url('/black_stone.png') 42 42, auto;
 }
+
+.stone_pile {
+  width: 100px;
+  height: 100px;
+
+  &__black {
+    background-color: black;
+    display: inline-block;
+  }
+
+  &__white {
+    background-color: white;
+    display: inline-block;
+  }
+}

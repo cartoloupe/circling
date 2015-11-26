@@ -3,13 +3,9 @@
     <br>
     <br>
   </div>
-  <div class="board">
-    <div class="grid">
-      {{#each cols}}
-        {{#each rows}}
-          {{> cell}}
-        {{/each}}
-      {{/each}}
-    </div>
+  {{>board}}
+  <div class="stone_pile stone_pile__black">
+  </div>
+  <div class="stone_pile stone_pile__white">
   </div>
 </template>

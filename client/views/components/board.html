@@ -1,0 +1,11 @@
+<template name="board">
+  <div class="board">
+    <div class="grid">
+      {{#each cols}}
+        {{#each rows}}
+          {{> cell}}
+        {{/each}}
+      {{/each}}
+    </div>
+  </div>
+</template>

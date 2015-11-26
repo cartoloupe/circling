@@ -6,5 +6,8 @@
       console.log 'created'
 
     Template.kaya.rendered = ->
-      console.log 'just rendered'
       $('.board').click -> console.log 'clicked'
+      $('.stone_pile').draggable()
+      console.log 'just rendered'
+
+
