@@ -1,0 +1,48 @@
+.nav, .nav-wrapper, .yeah {
+  background-color: #86592d;
+}
+
+.demibold {
+  font-family: "Avenir Next", "DemiBold";
+  font-weight: bolder;
+}
+
+.ultralight {
+  font-family: "Avenir Next", "UltraLight";
+  font-weight: lighter;
+  padding-right: 3px;
+}
+
+.normalbold {
+  font-family: "Avenir Next", "DemiBold";
+  font-weight: normal;
+}
+
+
+$cellheight: (150px/4);
+$cellwidth: (140px/4);
+$gridwidth: $cellwidth * 9 + 2;
+$gridheight: $cellheight * 9 + 2;
+$boardwidth: $gridwidth + $cellwidth +1;
+$boardheight: $gridheight + $cellheight;
+
+.cell {
+  height: $cellheight;
+  width: $cellwidth;
+  background-color: #cc9900;
+  border: 1px solid black;
+  float: left;
+}
+
+.grid {
+  width: $gridwidth;
+  height: $gridheight;
+  border: 1px solid black;
+  margin: 0 auto; // center
+  vertical-align: middle;
+}
+
+.board {
+  width: $boardwidth;
+  height: $boardheight;
+}
