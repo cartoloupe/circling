@@ -1,2 +1,2 @@
 # circling
-go
+encirclement game
