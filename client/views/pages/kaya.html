@@ -1,7 +1,16 @@
 <template name="kaya">
   {{>board}}
-  <div class="stone_pile stone_pile__black">
-  </div>
-  <div class="stone_pile stone_pile__white">
+  {{>stones}}
+</template>
+
+<template name="stones">
+  {{#each startingStones}}
+    {{> stone color="white"}}
+    {{> stone color="black"}}
+  {{/each}}
+</template>
+
+<template name="stone">
+<div class="stone_pile stone_pile__{{color}}">
   </div>
 </template>

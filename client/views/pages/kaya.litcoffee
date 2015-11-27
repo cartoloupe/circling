@@ -7,3 +7,5 @@
       console.log 'just rendered'
 
 
+    Template.stones.helpers
+      startingStones: -> _(42).times ->
