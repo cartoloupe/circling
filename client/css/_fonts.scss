@@ -1,0 +1,17 @@
+@import 'dimensions';
+
+.demibold {
+  font-family: "Avenir Next", "DemiBold";
+  font-weight: bolder;
+}
+
+.ultralight {
+  font-family: "Avenir Next", "UltraLight";
+  font-weight: lighter;
+  padding-right: 1px;
+}
+
+.normalbold {
+  font-family: "Avenir Next", "DemiBold";
+  font-weight: normal;
+}

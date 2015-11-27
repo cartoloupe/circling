@@ -1,0 +1,23 @@
+@import 'dimensions';
+
+.stone_pile {
+  width: $cellwidth - 3;
+  height: $cellheight - 3;
+  border-radius: 50%;
+  position: relative;
+
+  &__black {
+    top: ($boardheight / 2);
+    left: $boardwidth + $randommargin + 10;
+    position: absolute;
+    background-color: black;
+  }
+
+  &__white {
+    top: ($boardheight / 2) + $cellheight + $stonepilespacing;
+    left: $boardwidth + $randommargin + 10;
+    position: absolute;
+    background-color: white;
+  }
+}
+

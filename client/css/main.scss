@@ -1,6 +1,7 @@
 @import 'dimensions';
 @import 'cell';
 @import 'board';
+@import 'stone_pile';
 
 body {
   background-color: $maskcolor;
@@ -9,39 +10,3 @@ body {
   background-color: #86592d;
 }
 
-.demibold {
-  font-family: "Avenir Next", "DemiBold";
-  font-weight: bolder;
-}
-
-.ultralight {
-  font-family: "Avenir Next", "UltraLight";
-  font-weight: lighter;
-  padding-right: 1px;
-}
-
-.normalbold {
-  font-family: "Avenir Next", "DemiBold";
-  font-weight: normal;
-}
-
-.stone_pile {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: relative;
-
-  &__black {
-    top: ($boardheight / 2);
-    left: $boardwidth + 60 + 10;
-    position: absolute;
-    background-color: black;
-  }
-
-  &__white {
-    top: ($boardheight / 2) + 40;
-    left: $boardwidth + 60 + 10;
-    position: absolute;
-    background-color: white;
-  }
-}
