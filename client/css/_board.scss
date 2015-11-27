@@ -1,0 +1,26 @@
+@import 'dimensions';
+
+.grid {
+  width: $gridwidth;
+  height: $gridheight;
+  margin: 0 auto; // center
+  vertical-align: middle;
+
+  &__mask {
+    width: $gridwidth;
+    height: $gridheight;
+    position: absolute;
+    transform: translate(
+      ($cellwidth / 2),
+      -$gridheight
+    );
+    border: ($cellwidth / 2) solid $maskcolor;
+  }
+}
+
+.board {
+  width: $boardwidth;
+  height: $boardheight;
+  // cursor: url('/black_stone.png') 42 42, auto;
+}
+

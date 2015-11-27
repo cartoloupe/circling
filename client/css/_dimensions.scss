@@ -1,0 +1,9 @@
+$cellheight: (150px/4);
+$cellwidth: (150px/4);
+$gridwidth: $cellwidth * 9 + 2;
+$gridheight: $cellheight * 9 + 2;
+$boardwidth: $gridwidth + $cellwidth +1;
+$boardheight: $gridheight + $cellheight;
+
+$maskcolor: #997300;
+

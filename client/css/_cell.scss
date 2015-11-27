@@ -1,0 +1,28 @@
+@import 'dimensions';
+
+.cell {
+  position: relative;
+  height: $cellheight;
+  width: $cellwidth;
+  float: left;
+  
+  &-ich {
+    border-top: 2px solid black;
+    position: absolute;
+    transform: translate(
+      0px,
+      $cellheight / 2
+    );
+  }
+  &-ni {
+    border-left: 2px solid black;
+    position: absolute;
+    transform: translate(
+      $cellwidth / 2,
+      0
+    ); 
+  }
+  &-san {
+    position: absolute;
+  }
+}
