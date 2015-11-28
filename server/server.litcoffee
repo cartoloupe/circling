@@ -5,3 +5,7 @@
           cell: i,
           state: 'empty'
         })
+
+    Meteor.methods
+      reset: ->
+        Cells.update({}, {$set: {state: 'empty'}}, {multi: true})

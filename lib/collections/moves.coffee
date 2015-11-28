@@ -9,4 +9,4 @@ Meteor.methods
     doc = iddoc[1]
     cell = Cells.findOne(id)
     id2 = cell._id
-    Cells.update(id2, doc)
+    Cells.update(id2, {$set: doc})
