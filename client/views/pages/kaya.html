@@ -1,7 +1,10 @@
 <template name="kaya">
-  {{>verticalSpace}}
+  {{>verticalSpace n=[,,]}}
   {{>board}}
   {{>stones}}
+  {{>verticalSpace n=[,,,,]}}
+    <p>drag and drop</p>
+  {{>verticalSpace n=[,,,,,,]}}
   {{>reset}}
 </template>
 
@@ -10,9 +13,6 @@
     {{> stone color="white"}}
     {{> stone color="black"}}
   {{/each}}
-  <div class="spacer" style="float: right;">
-    <p>drag and drop</p>
-  </div>
 </template>
 
 <template name="stone">
@@ -20,7 +20,7 @@
 </template>
 
 <template name="verticalSpace">
-  <br>
-  <br>
-  <br>
+  {{#each n}}
+    <br>
+  {{/each}}
 </template>

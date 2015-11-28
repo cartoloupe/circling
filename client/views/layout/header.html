@@ -1,22 +1,7 @@
 <template name='header'>
   <nav class="yeah" role="navigation">
     <div class="nav-wrapper container">
-      <ul class="right hide-on-med-and-down">
-        {{#if currentUser}}
-          <li class='logout'><a href='{{pathFor "signIn"}}'>Logout</a></li>
-        {{else}}
-          <li class='{{isActiveRoute "/sign-in"}}'><a href='{{pathFor "/sign-in"}}'>Sign In</a></li>
-        {{/if}}
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        {{#if currentUser}}
-          <li class='logout'><a href='{{pathFor "signIn"}}'>Logout</a></li>
-        {{else}}
-          <li class='{{isActiveRoute "signIn"}} nav-mobile-link'><a href='{{pathFor "signIn"}}'>Sign In</a></li>
-        {{/if}}
-      </ul>
-      <a data-activates="nav-mobile" class="button-collapse"><i class="material-icons">{{>logo}}</i></a>
+      <i class="material-icons">{{>logo}}</i>
     </div>
   </nav>
 </template>

@@ -1,2 +1,2 @@
 Template.reset.events
-  'click button': -> Meteor.call('reset')
+  'click a': -> Meteor.call('reset')
