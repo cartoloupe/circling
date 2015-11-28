@@ -3,15 +3,17 @@
 .grid {
   width: $gridwidth;
   height: $gridheight;
-  margin: 0 auto; // center
+  //margin: 0 auto; // center
+  margin: 0 0 0 0;
   vertical-align: middle;
 
   &__mask {
     width: $gridwidth;
     height: $gridheight;
     position: absolute;
+    margin: 0 0 0 0;
     transform: translate(
-      ($cellwidth / 2),
+      0,
       -$gridheight
     );
     border: ($cellwidth / 2) solid $maskcolor;
