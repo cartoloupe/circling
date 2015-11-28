@@ -5,6 +5,7 @@ Cells.allow
 
 Meteor.methods
   updateCell: (iddoc) ->
+    console.log 'updating'
     id = iddoc[0]
     doc = iddoc[1]
     cell = Cells.findOne(id)
