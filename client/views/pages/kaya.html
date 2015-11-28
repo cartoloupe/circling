@@ -2,6 +2,9 @@
   {{>verticalSpace}}
   {{>board}}
   {{>stones}}
+  {{#each moves}}
+    <p>{{someMove}}</p>
+  {{/each}}
 </template>
 
 <template name="stones">
@@ -9,11 +12,13 @@
     {{> stone color="white"}}
     {{> stone color="black"}}
   {{/each}}
+  <div class="spacer" style="float: right;">
+    <p>drag and drop</p>
+  </div>
 </template>
 
 <template name="stone">
-<div class="stone_pile stone_pile__{{color}}">
-  </div>
+  <div class="stone_pile stone_pile__{{color}}"></div>
 </template>
 
 <template name="verticalSpace">

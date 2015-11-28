@@ -1,3 +1,9 @@
     Template.board.helpers
-      cols: -> _(9).times ->
-      rows: -> _(9).times ->
+      cells: -> Cells.find().fetch()
+
+    Template.board.onCreated ->
+      self = this
+      self.autorun ->
+        self.subscribe 'moves'
+      console.log 'created and subscribed'
+

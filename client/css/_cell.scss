@@ -5,7 +5,7 @@
   height: $cellheight;
   width: $cellwidth;
   float: left;
-  
+
   &-ich {
     border-top: 2px solid black;
     position: absolute;
@@ -20,9 +20,25 @@
     transform: translate(
       $cellwidth / 2,
       0
-    ); 
+    );
   }
   &-san {
     position: absolute;
+  }
+
+  .empty {
+  }
+  .white, .black {
+    width: $stonewidth;
+    height: $stoneheight;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+  }
+  .white {
+    background-color: white;
+  }
+  .black {
+    background-color: black;
   }
 }

@@ -3,6 +3,13 @@
 @import 'board';
 @import 'stone_pile';
 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 body {
   background-color: $maskcolor;
 }

@@ -1,13 +1,18 @@
 $cellsize:    200px;
+$numberOfCellsSquareRoot: 9;
 $cellheight:  ($cellsize /4);
 $cellwidth:   ($cellsize /4);
-$gridwidth:   $cellwidth * 9 + 2;
-$gridheight:  $cellheight * 9 + 2;
+$gridwidth:   $cellwidth * $numberOfCellsSquareRoot + 2;
+$gridheight:  $cellheight * $numberOfCellsSquareRoot + 2;
 $boardwidth:  $gridwidth + $cellwidth +1;
 $boardheight: $gridheight + $cellheight;
 
 $maskcolor: #997300;
 $randommargin: 60px;
+$centermargin: 100px;
 
-$stonepilespacing: $cellheight;
+$stonepilespacing: $cellheight * 2;
+
+$stonewidth: $cellwidth - 3;
+$stoneheight: $cellheight - 3;
 

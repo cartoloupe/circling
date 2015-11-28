@@ -1,10 +1,8 @@
 <template name="board">
   <div class="board">
     <div class="grid">
-      {{#each cols}}
-        {{#each rows}}
-          {{> cell}}
-        {{/each}}
+      {{#each cells}}
+        {{> cell }}
       {{/each}}
     </div>
     <div class="grid__mask">
